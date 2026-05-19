@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoBot IA – Asistente de Reciclaje | EcoBin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="led-word">EcoBin</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="proyecto.html">Proyecto</a></li>
+      <li><a href="tecnologia.html">Tecnología</a></li>
+      <li><a href="ecobot.html" class="active">EcoBot IA</a></li>
+      <li><a href="impacto.html">Impacto</a></li>
+    </ul>
+    <button class="nav-cta" onclick="location.href='ecobot.html'">Hablar con EcoBot</button>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Inicio</a>
+    <a href="proyecto.html">Proyecto</a>
+    <a href="tecnologia.html">Tecnología</a>
+    <a href="ecobot.html">EcoBot IA</a>
+    <a href="impacto.html">Impacto</a>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="hero-badge"><span class="badge-dot"></span>IA Educativa en Tiempo Real</div>
+  <h1>Conoce a <span class="title-eco">EcoBot</span></h1>
+  <p>Tu asistente inteligente de reciclaje. Pregúntame cualquier cosa sobre separación de residuos, cuidado ambiental o cómo funciona EcoBin.</p>
+</div>
+
+<section class="ecobot-page">
+  <div class="container">
+
+    <!-- CHAT CONTAINER -->
+    <div class="chat-container">
+      <div class="chat-header">
+        <div class="chat-avatar">🤖</div>
+        <div class="chat-header-info">
+          <strong>EcoBot – Asistente de Reciclaje</strong>
+          <span>IA Educativa · EcoBin</span>
+        </div>
+        <div class="chat-header-status">
+          <div class="status-dot"></div>
+          IA Activa
+        </div>
+      </div>
+
+      <!-- Quick suggestions -->
+      <div class="chat-suggestions">
+        <span class="sugg-label">💡 Preguntas frecuentes</span>
+        <button class="suggestion-btn" data-q="¿Dónde se deposita una lata?">🥫 ¿Dónde va una lata?</button>
+        <button class="suggestion-btn" data-q="¿El cartón mojado se recicla?">📦 ¿Cartón mojado recicla?</button>
+        <button class="suggestion-btn" data-q="¿Qué residuos van en el contenedor de plástico?">🧴 ¿Qué va en plástico?</button>
+        <button class="suggestion-btn" data-q="¿Por qué es importante reciclar?">♻️ ¿Por qué reciclar?</button>
+        <button class="suggestion-btn" data-q="¿Qué pasa si mezclamos residuos?">⚠️ ¿Qué pasa al mezclar?</button>
+        <button class="suggestion-btn" data-q="¿Cómo funciona EcoBin?">⚡ ¿Cómo funciona EcoBin?</button>
+      </div>
+
+      <!-- Messages -->
+      <div id="chatMessages">
+        <div class="chat-msg bot">
+          <div class="msg-avatar">🤖</div>
+          <div class="msg-bubble">
+            ¡Hola! Soy <strong>EcoBot</strong> 🌱, el asistente de inteligencia artificial de <strong>EcoBin</strong>.<br><br>
+            Estoy aquí para ayudarte a aprender sobre reciclaje, separación de residuos y cuidado ambiental. ¿Qué quieres saber hoy?
+          </div>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="chat-input-area">
+        <input type="text" id="userInput" placeholder="Escribe tu pregunta sobre reciclaje..." autocomplete="off" />
+        <button id="sendBtn">Enviar <span>→</span></button>
+      </div>
+      <div class="chat-disclaimer">
+        🔒 EcoBot usa IA real para responder sobre reciclaje y EcoBin
+      </div>
+    </div>
+
+    <!-- Info cards below chat -->
+    <div class="ecobot-info">
+      <div class="ebi-card">
+        <div class="ebi-icon">🧠</div>
+        <strong>IA Real</strong>
+        <span>Respuestas generadas por inteligencia artificial avanzada en tiempo real</span>
+      </div>
+      <div class="ebi-card">
+        <div class="ebi-icon">🌍</div>
+        <strong>Educación Ambiental</strong>
+        <span>Aprende a separar correctamente residuos con guía experta automatizada</span>
+      </div>
+      <div class="ebi-card">
+        <div class="ebi-icon">⚡</div>
+        <strong>Integrado en EcoBin</strong>
+        <span>EcoBot es el componente de IA integrado en EcoBin</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="led-word footer-led">EcoBin</span>
+      <p>Tecnología que transforma residuos en futuro.</p>
+      <p class="footer-sub">Solución sustentable para espacios escolares y públicos</p>
+    </div>
+    <div class="footer-links">
+      <h4>Proyecto</h4>
+      <a href="proyecto.html">Descripción</a>
+      <a href="tecnologia.html">Tecnología</a>
+      <a href="impacto.html">Impacto Ambiental</a>
+    </div>
+    <div class="footer-links">
+      <h4>EcoBot</h4>
+      <a href="ecobot.html">Chat con IA</a>
+      <a href="ecobot.html">Aprende a Reciclar</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 EcoBin — Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+// ===== ECOBOT CHAT LOGIC =====
+const chatMessages = document.getElementById('chatMessages');
+const userInput = document.getElementById('userInput');
+const sendBtn = document.getElementById('sendBtn');
+
+const SYSTEM_PROMPT = `Eres EcoBot, el asistente de inteligencia artificial educativa de EcoBin, un basurero inteligente automatizado para la clasificación de residuos.
+
+Tu misión es:
+- Educar sobre reciclaje y separación correcta de residuos para público general
+- Explicar en qué contenedor va cada tipo de residuo (vidrio, plástico, metal/aluminio, papel/cartón, orgánicos, peligrosos)
+- Responder preguntas sobre cuidado ambiental y sustentabilidad
+- Explicar cómo funciona EcoBin (sensores ultrasónicos, sensor inductivo, Arduino UNO, servomotores, pantalla LCD y un LED de señalización)
+- Motivar el reciclaje con datos interesantes y concretos
+
+Guía de colores de contenedores (México/estándar):
+- Amarillo: Metales (latas de aluminio, acero)
+- Azul: Papel y cartón (secos, no mojados)
+- Verde: Vidrio (botellas, frascos)
+- Rojo: Plásticos
+- Café/Verde oscuro: Orgánicos (restos de comida, cáscaras)
+- Negro/Gris: Residuos no reciclables
+- Naranja: Residuos peligrosos (pilas, medicamentos, aceites)
+
+Reglas de respuesta:
+- Primero responde la duda de forma general y luego relaciónala de manera concreta con EcoBin
+- Sé educativo, claro, amigable y profesional
+- Usa emojis de forma moderada para hacer las respuestas más visuales
+- Incluye datos curiosos o de impacto ambiental cuando sea relevante
+- Responde siempre en español
+- Máximo 3-4 párrafos cortos por respuesta
+- Si preguntan sobre EcoBin, explica que usa Arduino UNO, sensores ultrasónicos para detectar presencia/distancia, sensor inductivo para detectar metales, servomotores para abrir compartimentos, pantalla LCD para mostrar información y un LED para señalización
+- Siempre termina con un mensaje motivador breve sobre el impacto positivo del reciclaje`;
+
+const conversationHistory = [];
+
+function escapeHTML(text) {
+  return String(text)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function formatBotReply(text) {
+  return escapeHTML(text)
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    .replace(/\n\n/g, '<br><br>')
+    .replace(/\n/g, '<br>');
+}
+
+function addMessage(content, role) {
+  const div = document.createElement('div');
+  div.className = `chat-msg ${role}`;
+  const avatar = role === 'bot' ? '🤖' : '👤';
+  div.innerHTML = `
+    <div class="msg-avatar">${avatar}</div>
+    <div class="msg-bubble">${content}</div>
+  `;
+  chatMessages.appendChild(div);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function addTyping() {
+  const div = document.createElement('div');
+  div.className = 'chat-msg bot';
+  div.id = 'typingMsg';
+  div.innerHTML = `
+    <div class="msg-avatar">🤖</div>
+    <div class="msg-bubble">
+      <div class="typing-indicator"><span></span><span></span><span></span></div>
+    </div>
+  `;
+  chatMessages.appendChild(div);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function removeTyping() {
+  const t = document.getElementById('typingMsg');
+  if (t) t.remove();
+}
+
+function normalizeText(text) {
+  return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function localEcoBotReply(question) {
+  const q = normalizeText(question);
+  let general = 'Para separar correctamente un residuo, revisa primero su material principal, procura que esté vacío y evita mezclarlo con restos de comida o líquidos. Si está contaminado, puede perder valor de reciclaje.';
+  let ecobin = 'En EcoBin, esta información ayuda a que el usuario deposite sus residuos con más seguridad mientras el sistema automatizado refuerza la clasificación con sensores, pantalla LCD y un LED de señalización.';
+
+  if (q.includes('lata') || q.includes('aluminio') || q.includes('metal')) {
+    general = 'Las latas de aluminio o acero van en el contenedor de metales, normalmente identificado con color amarillo. Lo ideal es vaciarlas y, si es posible, compactarlas para ahorrar espacio.';
+    ecobin = 'En EcoBin, el sensor inductivo ayuda a identificar metales como las latas y guía la apertura del compartimento correcto para mejorar la separación.';
+  } else if (q.includes('carton') || q.includes('papel')) {
+    general = 'El papel y el cartón limpios y secos van en el contenedor azul. Si el cartón está mojado, grasoso o con restos de comida, normalmente ya no se recicla bien.';
+    ecobin = 'En EcoBin, EcoBot puede orientar al usuario antes de depositarlo, mientras la pantalla LCD refuerza el mensaje para evitar que el cartón contaminado llegue al reciclaje.';
+  } else if (q.includes('plastico') || q.includes('botella') || q.includes('pet')) {
+    general = 'Los plásticos reciclables, como botellas PET limpias, suelen ir en el contenedor rojo o en el contenedor indicado para plásticos según el sistema local. Conviene vaciarlos y aplastarlos.';
+    ecobin = 'En EcoBin, esta guía ayuda a que el usuario prepare el plástico antes de colocarlo, facilitando que el sistema lo dirija al compartimento adecuado.';
+  } else if (q.includes('vidrio') || q.includes('botella de vidrio') || q.includes('frasco')) {
+    general = 'El vidrio, como botellas y frascos, va en el contenedor verde. Debe ir vacío y sin tapas; si está roto, conviene manejarlo con cuidado para evitar accidentes.';
+    ecobin = 'En EcoBin, EcoBot refuerza estas indicaciones para que la separación sea más segura y clara en espacios escolares y públicos.';
+  } else if (q.includes('organico') || q.includes('comida') || q.includes('cascaras') || q.includes('restos')) {
+    general = 'Los residuos orgánicos incluyen restos de comida, cáscaras, hojas y materiales biodegradables. Pueden aprovecharse para composta si se separan correctamente.';
+    ecobin = 'En EcoBin, separar orgánicos evita que contaminen papel, cartón o metales, mejorando la calidad del reciclaje del resto de compartimentos.';
+  } else if (q.includes('pila') || q.includes('bateria') || q.includes('medicamento') || q.includes('aceite') || q.includes('peligroso')) {
+    general = 'Pilas, baterías, medicamentos, aceites y químicos son residuos peligrosos. No deben mezclarse con basura común; deben llevarse a puntos de acopio especializados.';
+    ecobin = 'En EcoBin, EcoBot puede advertir al usuario cuando un residuo requiere manejo especial para evitar contaminación y riesgos de salud.';
+  } else if (q.includes('ecobin') || q.includes('funciona') || q.includes('sensor') || q.includes('arduino')) {
+    general = 'EcoBin funciona como un basurero inteligente que combina detección, automatización y educación ambiental para facilitar la separación correcta de residuos.';
+    ecobin = 'El sistema integra Arduino UNO, sensores ultrasónicos, sensor inductivo para metales, servomotores para dirigir residuos, pantalla LCD para informar al usuario y un LED de señalización.';
+  } else if (q.includes('mezcl') || q.includes('separar') || q.includes('reciclar')) {
+    general = 'Separar residuos evita contaminación entre materiales y aumenta la posibilidad de que papel, cartón, vidrio, metal y plástico realmente se reciclen.';
+    ecobin = 'EcoBin busca hacer esa separación más fácil mediante automatización y apoyo educativo de EcoBot, para que cada usuario entienda el impacto de su decisión.';
+  }
+
+  return `${general}\n\n${ecobin}\n\nCada residuo bien separado suma a una comunidad más limpia y responsable.`;
+}
+
+function withTimeout(promise, ms = 12000) {
+  return Promise.race([
+    promise,
+    new Promise((_, reject) => setTimeout(() => reject(new Error('Tiempo de espera agotado')), ms))
+  ]);
+}
+
+function extractAIText(response) {
+  if (typeof response === 'string') return response;
+  if (response?.message?.content) {
+    if (Array.isArray(response.message.content)) {
+      return response.message.content.map(part => part.text || part.content || '').join('');
+    }
+    return response.message.content;
+  }
+  return response?.text || response?.content || '';
+}
+
+function ensureEcoBinRelation(reply) {
+  if (/ecobin/i.test(reply)) return reply;
+  return `${reply}\n\nEn EcoBin, esta respuesta se conecta con el objetivo de guiar a los usuarios para separar mejor sus residuos usando automatización, pantalla LCD y un LED de señalización.`;
+}
+
+async function askEcoBotAI(question) {
+  const recentContext = conversationHistory.slice(-6)
+    .map(msg => `${msg.role === 'user' ? 'Usuario' : 'EcoBot'}: ${msg.content}`)
+    .join('\n');
+  const prompt = `${SYSTEM_PROMPT}\n\nConversación reciente:\n${recentContext || 'Sin historial previo'}\n\nUsuario: ${question}\nEcoBot:`;
+  const url = `https://text.pollinations.ai/${encodeURIComponent(prompt)}?model=openai-fast&temperature=0.4`;
+  const response = await withTimeout(fetch(url, {
+    method: 'GET',
+    cache: 'no-store'
+  }), 12000);
+
+  if (!response.ok) {
+    throw new Error('La API de IA no respondió correctamente');
+  }
+
+  const reply = await response.text();
+  if (!reply.trim() || /IMPORTANT NOTICE|legacy text API|deprecated|enter\.pollinations\.ai|Queue full/i.test(reply)) {
+    throw new Error('La API devolvió un aviso en lugar de una respuesta');
+  }
+
+  return reply;
+}
+
+async function sendMessage(text) {
+  const cleanText = text.trim();
+  if (!cleanText) return;
+
+  addMessage(escapeHTML(cleanText), 'user');
+  userInput.value = '';
+  sendBtn.disabled = true;
+  addTyping();
+
+  let replyText = '';
+  try {
+    const response = await askEcoBotAI(cleanText);
+    replyText = ensureEcoBinRelation(extractAIText(response).trim());
+    if (!replyText) throw new Error('Respuesta vacía de la IA');
+  } catch (err) {
+    replyText = localEcoBotReply(cleanText);
+  } finally {
+    removeTyping();
+  }
+
+  addMessage(formatBotReply(replyText), 'bot');
+  conversationHistory.push({ role: 'user', content: cleanText });
+  conversationHistory.push({ role: 'assistant', content: replyText });
+  if (conversationHistory.length > 10) conversationHistory.splice(0, conversationHistory.length - 10);
+
+  sendBtn.disabled = false;
+  userInput.focus();
+}
+
+sendBtn.addEventListener('click', () => sendMessage(userInput.value));
+userInput.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey) sendMessage(userInput.value); });
+
+document.querySelectorAll('.suggestion-btn').forEach(btn => {
+  btn.addEventListener('click', () => sendMessage(btn.dataset.q));
+});
+</script>
+</body>
+</html>

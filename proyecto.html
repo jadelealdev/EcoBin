@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Proyecto – EcoBin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="led-word">EcoBin</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="proyecto.html" class="active">Proyecto</a></li>
+      <li><a href="tecnologia.html">Tecnología</a></li>
+      <li><a href="ecobot.html">EcoBot IA</a></li>
+      <li><a href="impacto.html">Impacto</a></li>
+    </ul>
+    <button class="nav-cta" onclick="location.href='ecobot.html'">Hablar con EcoBot</button>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Inicio</a>
+    <a href="proyecto.html">Proyecto</a>
+    <a href="tecnologia.html">Tecnología</a>
+    <a href="ecobot.html">EcoBot IA</a>
+    <a href="impacto.html">Impacto</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="hero-badge"><span class="badge-dot"></span>Tecnología sustentable</div>
+  <h1>El <span class="title-eco">Proyecto</span></h1>
+  <p>EcoBin es una solución tecnológica integral que automatiza la clasificación de residuos mediante sensores, actuadores y un asistente de IA educativa.</p>
+</div>
+
+<section class="proyecto-section">
+  <div class="container">
+
+    <!-- Overview -->
+    <div class="full-width-card">
+      <h3>🎯 Objetivo General</h3>
+      <p>EcoBin busca <strong>facilitar la correcta separación de residuos mediante automatización, sensores y comunicación asistida</strong>, fomentando el reciclaje y la educación ambiental en espacios escolares y públicos. A través de la integración de tecnología accesible como Arduino, sensores y un asistente de IA, EcoBin transforma un basurero común en un dispositivo inteligente que clasifica, educa e informa en tiempo real.</p>
+    </div>
+    <div class="proyecto-grid">
+      <div class="full-width-card">
+        <h3>Misión</h3>
+        <p>Desarrollar e implementar un basurero inteligente e interactivo que facilite la correcta separación de residuos mediante tecnología automatizada, promoviendo el reciclaje, la educación ambiental y la participación responsable de los usuarios. EcoBin busca contribuir al cuidado del medio ambiente a través de soluciones innovadoras, accesibles y sustentables que mejoren la gestión de residuos en espacios escolares y públicos.</p>
+      </div>
+      <div class="full-width-card">
+        <h3>Visión</h3>
+        <p>Ser un proyecto innovador y referente en el uso de tecnología aplicada a la gestión sustentable de residuos, impulsando una cultura de reciclaje más consciente y eficiente. EcoBin aspira a expandirse a diferentes instituciones y espacios públicos, fomentando hábitos ecológicos responsables y contribuyendo a la construcción de comunidades más limpias, organizadas y comprometidas con el medio ambiente.</p>
+      </div>
+    </div>
+
+    <div class="proyecto-grid">
+      <div class="proyecto-block">
+        <div class="section-tag">El Problema</div>
+        <h3>¿Por qué EcoBin?</h3>
+        <p>En México, más del <strong>70% de los residuos</strong> que podrían reciclarse terminan en rellenos sanitarios o tiraderos a cielo abierto, principalmente porque las personas no saben cómo clasificarlos correctamente o no tienen el incentivo para hacerlo.</p>
+        <p>La falta de infraestructura adecuada y educación ambiental accesible se traduce en contaminación de suelos, agua y aire, además del desperdicio de materiales valiosos que podrían reincorporarse al ciclo productivo.</p>
+        <p>EcoBin nace como respuesta tecnológica, educativa y escalable a este problema sistémico.</p>
+      </div>
+      <div class="proyecto-block">
+        <div class="section-tag">La Solución</div>
+        <h3>¿Cómo lo resuelve EcoBin?</h3>
+        <ul class="obj-list">
+          <li><span class="check">✓</span> <strong>Detección automática</strong> del tipo de residuo mediante sensores ultrasónicos e inductivos.</li>
+          <li><span class="check">✓</span> <strong>Clasificación mecánica</strong> con servomotores que dirigen el residuo al compartimento correcto.</li>
+          <li><span class="check">✓</span> <strong>Retroalimentación visual</strong> con pantalla LCD y un LED que indica el estado del sistema.</li>
+          <li><span class="check">✓</span> <strong>Educación continua</strong> mediante EcoBot, asistente de IA disponible las 24/7.</li>
+          <li><span class="check">✓</span> <strong>Escalabilidad</strong> a espacios escolares, públicos y urbanos.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Etapas del proyecto -->
+    <div class="section-tag">Desarrollo del Proyecto</div>
+    <h2 class="section-title">Etapas de implementación</h2>
+    <ul class="timeline">
+      <li>
+        <div class="tl-num">1</div>
+        <div class="tl-content">
+          <strong>Investigación y diagnóstico</strong>
+          <span>Análisis del problema de clasificación de residuos en espacios escolares y públicos. Revisión de literatura sobre tecnologías de detección y automatización disponibles en el mercado.</span>
+        </div>
+      </li>
+      <li>
+        <div class="tl-num">2</div>
+        <div class="tl-content">
+          <strong>Diseño del sistema</strong>
+          <span>Arquitectura del hardware: selección de Arduino UNO, sensores ultrasónicos, sensor inductivo, servomotores y pantalla LCD. Diseño del prototipo físico del basurero con compartimentos diferenciados.</span>
+        </div>
+      </li>
+      <li>
+        <div class="tl-num">3</div>
+        <div class="tl-content">
+          <strong>Construcción del prototipo</strong>
+          <span>Ensamble del sistema electrónico-mecánico. Programación del microcontrolador Arduino con lógica de detección y clasificación en tiempo real.</span>
+        </div>
+      </li>
+      <li>
+        <div class="tl-num">4</div>
+        <div class="tl-content">
+          <strong>Integración de EcoBot IA</strong>
+          <span>Implementación del asistente inteligente educativo EcoBot como componente de IA del proyecto. Diseño de la interfaz conversacional y base de conocimientos sobre reciclaje.</span>
+        </div>
+      </li>
+      <li>
+        <div class="tl-num">5</div>
+        <div class="tl-content">
+          <strong>Pruebas y validación</strong>
+          <span>Testing de precisión en la clasificación con distintos tipos de materiales. Ajuste de parámetros de sensores y lógica de control. Validación de respuestas de EcoBot.</span>
+        </div>
+      </li>
+      <li>
+        <div class="tl-num">6</div>
+        <div class="tl-content">
+          <strong>Implementación y mejora continua</strong>
+          <span>Implementación del prototipo en contextos reales. Recolección de retroalimentación de usuarios, análisis de impacto ambiental y mejora continua del sistema.</span>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Visión -->
+    <div class="full-width-card" style="margin-top:3rem;">
+      <h3>Escalabilidad futura</h3>
+      <p>EcoBin está diseñado para crecer. En su versión actual, el prototipo clasifica residuos en categorías básicas con alta precisión. Las etapas futuras contemplan la integración de <strong>visión artificial</strong> para reconocimiento de materiales complejos, conectividad <strong>IoT</strong> para monitoreo remoto en tiempo real, y redes de basureros inteligentes conectados que puedan generar estadísticas urbanas de reciclaje. EcoBot seguirá evolucionando como el núcleo de educación ambiental digital del sistema.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="led-word footer-led">EcoBin</span>
+      <p>Tecnología que transforma residuos en futuro.</p>
+      <p class="footer-sub">Solución sustentable para espacios escolares y públicos</p>
+    </div>
+    <div class="footer-links">
+      <h4>Proyecto</h4>
+      <a href="proyecto.html">Descripción</a>
+      <a href="tecnologia.html">Tecnología</a>
+      <a href="impacto.html">Impacto Ambiental</a>
+    </div>
+    <div class="footer-links">
+      <h4>EcoBot</h4>
+      <a href="ecobot.html">Chat con IA</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 EcoBin — Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

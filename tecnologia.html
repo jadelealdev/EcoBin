@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tecnología – EcoBin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="led-word">EcoBin</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="proyecto.html">Proyecto</a></li>
+      <li><a href="tecnologia.html" class="active">Tecnología</a></li>
+      <li><a href="ecobot.html">EcoBot IA</a></li>
+      <li><a href="impacto.html">Impacto</a></li>
+    </ul>
+    <button class="nav-cta" onclick="location.href='ecobot.html'">Hablar con EcoBot</button>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Inicio</a>
+    <a href="proyecto.html">Proyecto</a>
+    <a href="tecnologia.html">Tecnología</a>
+    <a href="ecobot.html">EcoBot IA</a>
+    <a href="impacto.html">Impacto</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="hero-badge"><span class="badge-dot"></span>Hardware + IA</div>
+  <h1>Stack <span class="title-eco">Tecnológico</span></h1>
+  <p>EcoBin combina electrónica accesible, programación embebida e inteligencia artificial para crear un sistema de clasificación de residuos robusto, preciso y escalable.</p>
+</div>
+
+<section style="padding: 5rem 0; position:relative; z-index:1;">
+  <div class="container">
+
+    <div class="section-tag">Componentes Principales</div>
+    <h2 class="section-title">El cerebro y el cuerpo de EcoBin</h2>
+    <p class="section-sub">Cada componente fue seleccionado por su confiabilidad, costo-efectividad y sinergia con el sistema global.</p>
+
+    <div class="tech-grid">
+
+      <div class="tech-card">
+        <div class="tech-card-icon">🎛️</div>
+        <h3>Arduino UNO</h3>
+        <p>Microcontrolador principal del sistema. Procesa todas las señales de sensores, ejecuta la lógica de clasificación y coordina los actuadores en tiempo real con latencia mínima.</p>
+        <span class="tech-spec">ATmega328P · 16 MHz</span>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">📡</div>
+        <h3>Sensores Ultrasónicos</h3>
+        <p>Detectan la presencia y distancia de los residuos al aproximarse al basurero. Utilizan ondas de ultrasonido para medir con precisión la posición del objeto sin contacto físico.</p>
+        <span class="tech-spec">HC-SR04 · 2–400 cm</span>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">🔩</div>
+        <h3>Sensor Inductivo</h3>
+        <p>Detecta materiales metálicos como aluminio y acero mediante campo electromagnético. Permite clasificar automáticamente latas y metales sin error, disparando la apertura del compartimento correcto.</p>
+        <span class="tech-spec">LJ12A3-4 · 4mm range</span>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">📟</div>
+        <h3>Pantalla LCD</h3>
+        <p>Display de cristal líquido 16×2 que muestra en tiempo real el tipo de residuo detectado, el compartimento al que fue asignado y mensajes educativos para el usuario.</p>
+        <span class="tech-spec">LCD 16×2 · I2C Interface</span>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">⚙️</div>
+        <h3>Servomotores</h3>
+        <p>Actuadores de precisión que abren y cierran las compuertas de cada compartimento según la clasificación del residuo. Control angular exacto para dirección precisa del material.</p>
+        <span class="tech-spec">SG90 · 180° rotation</span>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">💡</div>
+        <h3>LED de Señalización</h3>
+        <p>Retroalimentación visual instantánea mediante un solo LED que indica el estado del sistema y refuerza la interacción del usuario con EcoBin.</p>
+        <span class="tech-spec">LED RGB · 5mm</span>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">🤖</div>
+        <h3>EcoBot IA Educativa</h3>
+        <p>Asistente inteligente basado en IA avanzada. Responde preguntas en lenguaje natural sobre reciclaje, separación de residuos y cuidado ambiental. Es el componente de inteligencia artificial del proyecto.</p>
+        <span class="tech-spec">Pollinations AI · Integración web</span>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-card-icon">⚡</div>
+        <h3>Sistema Automatizado</h3>
+        <p>Lógica de control programada en C++ para Arduino que integra todas las señales de entrada, toma decisiones de clasificación y coordina actuadores en menos de 500ms por ciclo de detección.</p>
+        <span class="tech-spec">C++ · &lt;500ms latency</span>
+      </div>
+
+    </div>
+
+    <!-- Diagrama de flujo -->
+    <div class="diagram-section">
+      <div class="section-tag">Flujo de Operación</div>
+      <h2 class="section-title">¿Cómo clasifica EcoBin?</h2>
+      <p class="section-sub">El proceso de clasificación ocurre en milisegundos, de forma automática y sin intervención del usuario.</p>
+
+      <div class="diagram-box">
+        <div class="diag-step">
+          <div class="diag-icon">🗑️</div>
+          <strong style="font-size:0.8rem;color:var(--white);">Residuo insertado</strong>
+          <span>El usuario introduce el residuo</span>
+        </div>
+        <div class="diag-step">
+          <div class="diag-icon">📡</div>
+          <strong style="font-size:0.8rem;color:var(--white);">Detección ultrasónica</strong>
+          <span>Sensor mide distancia y presencia</span>
+        </div>
+        <div class="diag-step">
+          <div class="diag-icon">🔩</div>
+          <strong style="font-size:0.8rem;color:var(--white);">Sensor inductivo</strong>
+          <span>¿Es metal? Clasificación inmediata</span>
+        </div>
+        <div class="diag-step">
+          <div class="diag-icon">🎛️</div>
+          <strong style="font-size:0.8rem;color:var(--white);">Arduino decide</strong>
+          <span>Procesa señales y ejecuta lógica</span>
+        </div>
+        <div class="diag-step">
+          <div class="diag-icon">⚙️</div>
+          <strong style="font-size:0.8rem;color:var(--white);">Servomotor actúa</strong>
+          <span>Abre el compartimento correcto</span>
+        </div>
+        <div class="diag-step">
+          <div class="diag-icon">📟</div>
+          <strong style="font-size:0.8rem;color:var(--white);">Retroalimentación</strong>
+          <span>La pantalla LCD y el LED informan al usuario</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Especificaciones técnicas -->
+    <div style="margin-top:4rem;">
+      <div class="section-tag">Especificaciones</div>
+      <h2 class="section-title">Resumen técnico del sistema</h2>
+      <div class="full-width-card" style="margin-top:1.5rem;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;">
+          <div>
+            <span style="font-size:0.72rem;color:var(--gray);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;">Microcontrolador</span>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);margin-top:0.25rem;">Arduino UNO R3</div>
+          </div>
+          <div>
+            <span style="font-size:0.72rem;color:var(--gray);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;">Tiempo de clasificación</span>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);margin-top:0.25rem;">&lt; 500 ms</div>
+          </div>
+          <div>
+            <span style="font-size:0.72rem;color:var(--gray);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;">Precisión de detección</span>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);margin-top:0.25rem;">95%+</div>
+          </div>
+          <div>
+            <span style="font-size:0.72rem;color:var(--gray);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;">Categorías de residuos</span>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);margin-top:0.25rem;">6 compartimentos</div>
+          </div>
+          <div>
+            <span style="font-size:0.72rem;color:var(--gray);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;">Lenguaje de programación</span>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);margin-top:0.25rem;">C++ (Arduino IDE)</div>
+          </div>
+          <div>
+            <span style="font-size:0.72rem;color:var(--gray);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.08em;">IA integrada</span>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);margin-top:0.25rem;">EcoBot (Pollinations AI)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="led-word footer-led">EcoBin</span>
+      <p>Tecnología que transforma residuos en futuro.</p>
+      <p class="footer-sub">Solución sustentable para espacios escolares y públicos</p>
+    </div>
+    <div class="footer-links">
+      <h4>Proyecto</h4>
+      <a href="proyecto.html">Descripción</a>
+      <a href="tecnologia.html">Tecnología</a>
+      <a href="impacto.html">Impacto Ambiental</a>
+    </div>
+    <div class="footer-links">
+      <h4>EcoBot</h4>
+      <a href="ecobot.html">Chat con IA</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 EcoBin — Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

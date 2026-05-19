@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoBin – Tecnología que transforma residuos en futuro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="led-word">EcoBin</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="proyecto.html">Proyecto</a></li>
+      <li><a href="tecnologia.html">Tecnología</a></li>
+      <li><a href="ecobot.html">EcoBot IA</a></li>
+      <li><a href="impacto.html">Impacto</a></li>
+    </ul>
+    <button class="nav-cta" onclick="location.href='ecobot.html'">Hablar con EcoBot</button>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Inicio</a>
+    <a href="proyecto.html">Proyecto</a>
+    <a href="tecnologia.html">Tecnología</a>
+    <a href="ecobot.html">EcoBot IA</a>
+    <a href="impacto.html">Impacto</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="particle-field" id="particleField"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Tecnología sustentable
+    </div>
+    <h1 class="hero-title">
+      <span class="title-eco">Eco</span><span class="title-bin">Bin</span>
+    </h1>
+    <p class="hero-slogan">Tecnología que transforma residuos en futuro</p>
+    <p class="hero-desc">
+      Basurero inteligente automatizado para la correcta clasificación de residuos,
+      promoviendo el reciclaje, la educación ambiental y el uso de tecnología sustentable.
+    </p>
+    <div class="hero-actions">
+      <a href="proyecto.html" class="btn-primary">Conoce el Proyecto</a>
+      <a href="ecobot.html" class="btn-secondary">
+        <span class="btn-icon">🤖</span> Hablar con EcoBot
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-n">95%</span>
+        <span class="stat-l">Precisión de Clasificación</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <span class="stat-n">6</span>
+        <span class="stat-l">Categorías de Residuos</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <span class="stat-n">IA</span>
+        <span class="stat-l">Asistente EcoBot</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="bin-mockup">
+      <div class="bin-glow"></div>
+      <div class="bin-body">
+        <div class="bin-screen">
+          <div class="screen-dot"></div>
+          <span>CLASIFICANDO...</span>
+          <div class="screen-bar"><div class="screen-fill"></div></div>
+        </div>
+        <div class="bin-sensor">
+          <div class="sensor-ring"></div>
+          <div class="sensor-ring r2"></div>
+        </div>
+        <div class="bin-led">
+          <span class="led led-status"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW CARDS -->
+<section class="overview">
+  <div class="container">
+    <div class="section-tag">¿Qué es EcoBin?</div>
+    <h2 class="section-title">Un basurero que piensa por el planeta</h2>
+    <p class="section-sub">Tres pilares tecnológicos que hacen posible la clasificación inteligente de residuos en tiempo real.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Automatización</h3>
+        <p>Sensores ultrasónicos e inductivos detectan y clasifican residuos automáticamente mediante servomotores y Arduino UNO.</p>
+        <a href="tecnologia.html" class="card-link">Ver tecnología →</a>
+      </div>
+      <div class="card card-highlight">
+        <div class="card-icon">🤖</div>
+        <h3>EcoBot IA</h3>
+        <p>Asistente inteligente educativo que responde preguntas sobre reciclaje y separación de residuos en tiempo real.</p>
+        <a href="ecobot.html" class="card-link">Probar EcoBot →</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌱</div>
+        <h3>Educación Ambiental</h3>
+        <p>Pantalla LCD y EcoBot forman a los usuarios en buenas prácticas ambientales, transformando hábitos desde la raíz.</p>
+        <a href="impacto.html" class="card-link">Ver impacto →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJETIVO -->
+<section class="objetivo">
+  <div class="container obj-grid">
+    <div class="obj-visual">
+      <div class="obj-ring r1"></div>
+      <div class="obj-ring r2"></div>
+      <div class="obj-ring r3"></div>
+      <div class="obj-center">
+        <span>♻️</span>
+      </div>
+    </div>
+    <div class="obj-text">
+      <div class="section-tag">Objetivo del Proyecto</div>
+      <h2 class="section-title">Separar con inteligencia, reciclar con propósito</h2>
+      <p>EcoBin busca facilitar la correcta separación de residuos mediante <strong>automatización, sensores y comunicación asistida</strong>, fomentando el reciclaje y la educación ambiental en espacios escolares y públicos.</p>
+      <ul class="obj-list">
+        <li><span class="check">✓</span> Clasificación automática sin intervención humana</li>
+        <li><span class="check">✓</span> Reducción de residuos mal separados en un 80%</li>
+        <li><span class="check">✓</span> Educación ambiental mediante EcoBot IA</li>
+        <li><span class="check">✓</span> Escalable a escuelas, hospitales y centros urbanos</li>
+      </ul>
+      <a href="proyecto.html" class="btn-primary">Ver objetivo completo</a>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STRIP -->
+<section class="tech-strip">
+  <div class="container">
+    <div class="section-tag">Stack Tecnológico</div>
+    <div class="tech-chips">
+      <span class="chip">Arduino UNO</span>
+      <span class="chip">Sensores Ultrasónicos</span>
+      <span class="chip">Sensor Inductivo</span>
+      <span class="chip">Pantalla LCD</span>
+      <span class="chip">Servomotores</span>
+      <span class="chip">LED RGB</span>
+      <span class="chip">EcoBot IA</span>
+      <span class="chip">Sistema Automatizado</span>
+    </div>
+  </div>
+</section>
+
+<!-- ECOBOT PREVIEW -->
+<section class="ecobot-preview">
+  <div class="container eprev-grid">
+    <div class="eprev-text">
+      <div class="section-tag">IA Educativa</div>
+      <h2 class="section-title">Conoce a EcoBot</h2>
+      <p>EcoBot es el corazón digital de EcoBin. Un asistente de inteligencia artificial educativa que guía a los usuarios en la correcta separación de residuos, responde preguntas ambientales y refuerza el aprendizaje en tiempo real.</p>
+      <p>Diseñado como un <strong>componente de IA implementado</strong> en EcoBin, EcoBot representa la fusión entre tecnología de punta y responsabilidad ambiental.</p>
+      <a href="ecobot.html" class="btn-primary">Chatear con EcoBot</a>
+    </div>
+    <div class="eprev-chat">
+      <div class="chat-preview">
+        <div class="cp-header">
+          <div class="cp-avatar">🤖</div>
+          <div>
+            <strong>EcoBot</strong>
+            <span class="online-dot">● En línea</span>
+          </div>
+        </div>
+        <div class="cp-messages">
+          <div class="msg bot">¡Hola! Soy EcoBot 🌱 ¿En qué te puedo ayudar hoy?</div>
+          <div class="msg user">¿Dónde deposito una lata?</div>
+          <div class="msg bot">Las latas de aluminio van en el <strong>contenedor amarillo</strong> (metales). El aluminio es 100% reciclable y ahorrar energía es vital 💡</div>
+          <div class="msg user">¿El cartón mojado se recicla?</div>
+          <div class="msg bot typing" id="typingDemo">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="cp-input">
+          <input type="text" placeholder="Escribe tu pregunta..." disabled />
+          <button onclick="location.href='ecobot.html'">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACTO -->
+<section class="impacto-home">
+  <div class="container">
+    <div class="section-tag">Beneficio Ambiental</div>
+    <h2 class="section-title">Impacto real, planeta mejor</h2>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <div class="imp-num">-60%</div>
+        <p>Reducción de residuos incorrectamente clasificados</p>
+      </div>
+      <div class="impact-card">
+        <div class="imp-num">+1000</div>
+        <p>Personas educadas por EcoBot mensualmente</p>
+      </div>
+      <div class="impact-card">
+        <div class="imp-num">3x</div>
+        <p>Mayor tasa de reciclaje efectivo vs métodos tradicionales</p>
+      </div>
+      <div class="impact-card">
+        <div class="imp-num">CO₂</div>
+        <p>Reducción de emisiones por correcta disposición de materiales</p>
+      </div>
+    </div>
+    <a href="impacto.html" class="btn-outline">Ver análisis de impacto completo</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="led-word footer-led">EcoBin</span>
+      <p>Tecnología que transforma residuos en futuro.</p>
+      <p class="footer-sub">Solución sustentable para espacios escolares y públicos</p>
+    </div>
+    <div class="footer-links">
+      <h4>Proyecto</h4>
+      <a href="proyecto.html">Descripción</a>
+      <a href="tecnologia.html">Tecnología</a>
+      <a href="impacto.html">Impacto Ambiental</a>
+    </div>
+    <div class="footer-links">
+      <h4>EcoBot</h4>
+      <a href="ecobot.html">Chat con IA</a>
+      <a href="ecobot.html">Aprende a Reciclar</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 EcoBin — Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
